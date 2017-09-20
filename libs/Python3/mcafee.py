@@ -2,7 +2,8 @@
 import http.client
 import json
 import logging
-import mimetools, mimetypes
+import email
+import mimetypes
 import socket
 import ssl
 import sys
@@ -127,7 +128,7 @@ def _encode_multipart_formdata(fields):
     body, content_type = _encode_multipart_formdata(fields)
     """
 
-    BOUNDARY = '--' + mimetools.choose_boundary()
+    BOUNDARY = '--' + email.generator._make_boundary()
 
     body = ''
 
@@ -245,7 +246,8 @@ class _CommandInvoker(object):
 
         #Setup a handler to pass credentials for BASIC auth
         passmgr = urllib.request.HTTPPasswordMgrWithDefaultRealm()
-        passmgr.add_password(None, self.baseurl, username.encode(_UTF8), password.encode(_UTF8))
+#        passmgr.add_password(None, self.baseurl, username.encode(_UTF8), password.encode(_UTF8))
+        passmgr.add_password(None, self.baseurl, username, password)
         authhandler = urllib.request.HTTPBasicAuthHandler(passmgr)
         if sys.version_info < (2, 7):
             self.opener = urllib.request.build_opener(authhandler, urllib.request.HTTPCookieProcessor())
