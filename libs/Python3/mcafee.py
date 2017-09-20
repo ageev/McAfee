@@ -2,7 +2,7 @@
 import http.client
 import json
 import logging
-import email
+import email.generator
 import mimetypes
 import socket
 import ssl
@@ -10,7 +10,7 @@ import sys
 import urllib.request, urllib.parse, urllib.error, urllib.request, urllib.error, urllib.parse
 from urllib.error import HTTPError, URLError
 from urllib.request import Request
-from urlquote import quote
+from urllib.parse import quote
 
 #
 # CREATE_LOG_FILE is a flag to determine whether or not to create a log file
