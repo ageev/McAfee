@@ -6,3 +6,4 @@ copy libs from <libs> folder to python root folder
 ## Python 3.x
 copy libs from <libs/Python3> to python root folder
 copy .pyc files from <lib/> to python root folder
+urlquiry files not needed
