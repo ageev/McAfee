@@ -1,5 +1,5 @@
 
-# https://epo.network.canon-europe.com:8443/remote/core.help
+# https://epo:8443/remote/core.help
 
 import mcafee
 import os
@@ -10,7 +10,8 @@ SERVER = 'epo'
 USERNAME = ''
 PASSWORD = ''
 
-TAG_NAME = "Scanning disabled"
+# TAG_NAME = "Scanning disabled"
+TAG_NAME = "Weekly scan disabled"
 
 def main(argv):
     global epo, verbose
