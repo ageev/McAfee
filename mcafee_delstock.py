@@ -3,7 +3,7 @@ import os
 import sys
 import getopt
 
-SERVER = ''
+SERVER = 'epo'
 USERNAME = ''
 PASSWORD = ''
 CHECKED_STOCK = "checked_stock.txt" #this file is used to store machines which exist in ePo
