@@ -6,8 +6,7 @@ This scripts & libs will allow you to communicate with McAfee ePo
 #### Python 2.7
 copy libs from <libs> folder to python lib or root folder
 #### Python 3.x
-copy libs from <libs/Python3> to python lib or root folder
-also in some new scripts I don't use McAfee PYC module anymore (i use requests)
+copy libs from <libs/Python3> to python lib or root folder. For new scripts I don't use McAfee PYC module anymore (i use requests).
 
 ## unpacking quarantine files
 1. Download 7zip
