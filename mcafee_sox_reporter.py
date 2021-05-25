@@ -11,7 +11,7 @@ import json
 import datetime
 
 SERVER = 'epo'
-USERNAME = PASSWORD = 'k77l5lOpkdVVs8d9FjEI'
+USERNAME = PASSWORD = ''
 CSVFILENAME = "/logs/" + datetime.datetime.now().strftime("%Y-%m-%d %H-%M-%S") + ".csv"
 REPORTFILENAME = "/data.csv"
 
