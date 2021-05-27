@@ -1,6 +1,4 @@
 
-# https://epo.network.canon-europe.com:8443/remote/core.help
-
 import mcafee
 import os
 import sys
